@@ -16,19 +16,18 @@ defmodule Main.Mixfile do
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       extra_applications: [:logger],
-      mod: {Main.Application, []}
+      mod: {Main.Application, []},
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
       {:datasets, in_umbrella: true},
-      {:models, in_umbrella: true},
+      {:models, in_umbrella: true, only: [:test]},
+      {:models_interface, in_umbrella: true},
       {:utils, in_umbrella: true},
       {:espec, "1.4.6", only: :test}
     ]

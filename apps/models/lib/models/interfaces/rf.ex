@@ -1,5 +1,5 @@
 defmodule Models.Interfaces.Rf do
-  alias Models.Rf.Engine
+  alias Models.Rf
 
-  defdelegate fit_model(data), to: Models.Rf
+  defdelegate fit_model(data), to: Rf
 end

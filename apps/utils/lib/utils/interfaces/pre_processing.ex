@@ -1,5 +1,5 @@
-defmodule Utils.Interfaces.PrePorcessing do
-  alias Utils.PrePorcessing
+defmodule Utils.Interfaces.PreProcessing do
+  alias Utils.PreProcessing
 
-  defdelegate normalize_data(data), to: Utils.PrePorcessing
+  defdelegate normalize_data(data), to: PreProcessing
 end

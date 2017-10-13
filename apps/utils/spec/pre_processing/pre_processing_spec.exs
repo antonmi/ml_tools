@@ -1,4 +1,4 @@
-defmodule Utils.PrePorcessingSpec do
+defmodule Utils.PreProcessingSpec do
   use ESpec
 
   describe ".normalize_data" do

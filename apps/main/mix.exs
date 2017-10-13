@@ -29,7 +29,8 @@ defmodule Main.Mixfile do
       {:datasets_interface, in_umbrella: true},
       {:models, in_umbrella: true, only: [:test]},
       {:models_interface, in_umbrella: true},
-      {:utils, in_umbrella: true},
+      {:utils, in_umbrella: true, only: [:test]},
+      {:utils_interface, in_umbrella: true,},
       {:espec, "1.4.6", only: :test}
     ]
   end

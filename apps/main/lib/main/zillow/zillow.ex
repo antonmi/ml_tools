@@ -6,7 +6,7 @@ defmodule Main.Zillow do
 #  end
 
   def rf_fit do
-    Datasets.Interfaces.Fetchers.zillow_data
+    DatasetsInterface.Fetchers.zillow_data
     |> Utils.Interfaces.PrePorcessing.normalize_data
     |> ModelsInterface.Rf.fit_model
   end

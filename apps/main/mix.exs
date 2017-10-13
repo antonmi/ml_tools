@@ -25,7 +25,8 @@ defmodule Main.Mixfile do
 
   defp deps do
     [
-      {:datasets, in_umbrella: true},
+      {:datasets, in_umbrella: true, only: [:test]},
+      {:datasets_interface, in_umbrella: true},
       {:models, in_umbrella: true, only: [:test]},
       {:models_interface, in_umbrella: true},
       {:utils, in_umbrella: true},

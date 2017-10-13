@@ -2,7 +2,8 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :models_interface, node: :"models@ip-192-168-1-150"
+config :models_interface,
+       node: :"models@ip-192-168-1-150"
 
 
 

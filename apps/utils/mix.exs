@@ -25,8 +25,8 @@ defmodule Utils.Mixfile do
 
   defp deps do
     [
-      {:cowboy, "~> 1.0.0"},
-      {:plug, "~> 1.0"},
+      {:cowboy, "~> 2.7"},
+      {:plug, "~> 1.8"},
       {:espec, "~> 1.7", only: :test}
     ]
   end

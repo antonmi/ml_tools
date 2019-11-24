@@ -6,7 +6,7 @@ defmodule Main.ZillowSpec do
 
     it "returns the fit" do
       expected_result = %{a: 1, b: 2, data: %{normalized: %{zillow: :dataset}}}
-      expect(fit()).to eq(expected_result)
+      expect fit() |> to(eq expected_result)
     end
   end
 end

@@ -27,7 +27,7 @@ defmodule Utils.Mixfile do
     [
       {:cowboy, "~> 1.0.0"},
       {:plug, "~> 1.0"},
-      {:espec, "1.4.6", only: :test}
+      {:espec, "~> 1.7", only: :test}
     ]
   end
 end

@@ -4,6 +4,6 @@ defmodule Utils.PreProcessingSpec do
   describe ".normalize_data" do
     let :data, do: described_module().normalize_data("data")
 
-    it do: expect(data()).to eq(%{normalized: "data"})
+    it do: expect data() |> to(eq %{normalized: "data"})
   end
 end

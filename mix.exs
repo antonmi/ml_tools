@@ -12,7 +12,7 @@ defmodule MlTools.Mixfile do
 
   defp deps do
     [
-      {:espec, "1.4.6", only: :test}
+      {:espec, "~> 1.7", only: :test}
     ]
   end
 end

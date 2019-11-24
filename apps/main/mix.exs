@@ -31,7 +31,7 @@ defmodule Main.Mixfile do
       {:models_interface, in_umbrella: true},
       {:utils, in_umbrella: true, only: [:test]},
       {:utils_interface, in_umbrella: true,},
-      {:espec, "1.4.6", only: :test}
+      {:espec, "~> 1.7", only: :test}
     ]
   end
 end

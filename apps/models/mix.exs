@@ -25,6 +25,7 @@ defmodule Models.Mixfile do
 
   defp deps do
     [
+      {:poolboy, "1.5.1"},
       {:espec, "1.4.6", only: :test}
     ]
   end

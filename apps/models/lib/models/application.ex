@@ -1,19 +1,16 @@
 defmodule Models.Application do
-  # See https://hexdocs.pm/elixir/Application.html
-  # for more information on OTP Applications
-  @moduledoc false
-
   use Application
 
   def start(_type, _args) do
-    # List all child processes to be supervised
+    pool_options = [
+      name: {:local, Models.Interface},
+      worker_module: Models.Interfaces.Worker,
+      size: 5, max_overflow: 5]
+
     children = [
-      # Starts a worker by calling: Models.Worker.start_link(arg)
-      # {Models.Worker, arg},
+      :poolboy.child_spec(Models.Interface, pool_options, []),
     ]
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Models.Supervisor]
     Supervisor.start_link(children, opts)
   end
